@@ -1,44 +1,41 @@
+
 <html>
     <title>Webkit 8.xx test</title>
+
     <script>
 
-        async function Teste_Mich() {
+        async function testwebkit() {
 
-            alert("Ja es Läuft auf Deiner PS4");
+            alert("DIESE SEITE IST EIN TEST FÜR DENN WEBKIT EXPLOIT FÜR DIE PS4\n KLICK OK\n WENN SIE KEINE 'WURDE GEPATCHT' MELDUNG ODER 'MEMORY ERROR' MELDUNG ODER IRGENDEINE FEHLERMELDUNG SEHEN, BEDEUTET DAS ES NICHT GEPTACHT IST!");
             
-            
-            let font = new FontFace("font1", '', {});
-                     
+            let font = new FontFace("font1", '', {}, ConfirmWork());
 
             var fontFaceSet = new FontFaceSet([font]);
-                        
-          
+
             font.family = "font2";
             //do something after the font is loaded
-            
-            
+
             NotWork();
-           
+            
             
         }
-        
-         function ConfirmWork() {
+
+        function ConfirmWork() {
             //alert("Webkit Work !");
-            document.getElementById("test").innerHTML = " Ja es Läuft auf Deiner PS4 :) ";
+            document.getElementById("test").innerHTML = "Ja es Läuft auf Deiner PS4 :-)";
+
         }
 
         function NotWork() {
             //alert("Webkit Patched here !");
-            document.getElementById("test").innerHTML = "Ah Shit,here we go again ! Wurde Geptacht !, Sry Next Time! :( ";
-             
-      
+            document.getElementById("test").innerHTML = "Ah Shit,here we go again ! Wurde Geptacht !, Sry Next Time! :-(";
+        }
 
     </script>
 
     <body>
-        <button onclick="Teste_Mich()">Teste Mich</button>
+        <button onclick="testwebkit()">Teste Mich</button>
         <p id="test">test text</p>
 
     </body>
-
 </html>
